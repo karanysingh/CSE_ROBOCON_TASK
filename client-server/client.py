@@ -1,7 +1,6 @@
 #client file
 
-import socket            
-import os
+import socket     
 s = socket.socket()
 host = socket.gethostname()
 
@@ -13,4 +12,9 @@ while True:
     f.write(t.decode())
     s.send('Data Written Succesfully!!'.encode())
     f.close()
-s.close()                   
+    endd = input("Want to end: (y/n)\n ")
+    if(endd=='y'):
+        break
+    else:
+        continue
+s.close()
