@@ -1,5 +1,6 @@
 #include<Wire.h>
 const int MPU = 0x68;
+int16_t AccX,AccY,AccZ,Temp,GyroX,GyroY,GyroZ;
 void setup() {
   Wire.begin();
   Wire.beginTransmission(MPU);
