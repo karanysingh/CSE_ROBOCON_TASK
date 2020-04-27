@@ -21,5 +21,12 @@ void loop() {
   GyroX=Wire.read()<<8|Wire.read();
   GyroY=Wire.read()<<8|Wire.read();
   GyroZ=Wire.read()<<8|Wire.read();
-  delay(100)
+  Serial.print("AccX = "); Serial.print(AccX);
+  Serial.print("  AccY = "); Serial.print(AccY);
+  Serial.print("  AccZ = "); Serial.print(AccZ);
+  Serial.print("\nTemp = "); Serial.print(Temp/340.00+36.53);
+  Serial.print("\nGyroX = "); Serial.print(GyroX);
+  Serial.print("  GyroY = "); Serial.print(GyroY);
+  Serial.print("  GyroZ = "); Serial.println(GyroZ);
+  delay(200)
 }
