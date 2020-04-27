@@ -29,5 +29,5 @@ void loop() {
   Serial.print("\nGyroX = "); Serial.print(GyroX);
   Serial.print("  GyroY = "); Serial.print(GyroY);
   Serial.print("  GyroZ = "); Serial.println(GyroZ);
-  delay(200)
+  delay(200);
 }
