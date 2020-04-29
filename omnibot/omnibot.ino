@@ -50,14 +50,14 @@ void execution(){
         digitalWrite(motor1_IN1,LOW);
         digitalWrite(motor1_IN2,HIGH);
         //motor NE
-        digitalWrite(motor2_IN3,HIGH);
-        digitalWrite(motor2_IN4,LOW); 
+        digitalWrite(motor2_IN1,HIGH);
+        digitalWrite(motor2_IN2,LOW); 
         //motor SW
         digitalWrite(motor3_IN1,LOW);
         digitalWrite(motor3_IN2,HIGH);
         //motor SE
-        digitalWrite(motor4_IN3,HIGH);
-        digitalWrite(motor4_IN4,LOW);
+        digitalWrite(motor4_IN1,HIGH);
+        digitalWrite(motor4_IN2,LOW);
         }
       case'A'{
         Serial.println("LEFT");
@@ -65,14 +65,14 @@ void execution(){
         digitalWrite(motor1_IN1,HIGH);
         digitalWrite(motor1_IN2,LOW);
         //motor NE
-        digitalWrite(motor2_IN3,HIGH);
-        digitalWrite(motor2_IN4,LOW); 
+        digitalWrite(motor2_IN1,HIGH);
+        digitalWrite(motor2_IN2,LOW); 
         //motor SW
         digitalWrite(motor3_IN1,LOW);
         digitalWrite(motor3_IN2,HIGH);
         //motor SE
-        digitalWrite(motor4_IN3,LOW);
-        digitalWrite(motor4_IN4,HIGH);
+        digitalWrite(motor4_IN1,LOW);
+        digitalWrite(motor4_IN2,HIGH);
         }
       case'D'{
         Serial.println("Right");
@@ -80,14 +80,14 @@ void execution(){
         digitalWrite(motor1_IN1,LOW);
         digitalWrite(motor1_IN2,HIGH);
         //motor NE
-        digitalWrite(motor2_IN3,LOW);
-        digitalWrite(motor2_IN4,HIGH); 
+        digitalWrite(motor2_IN1,LOW);
+        digitalWrite(motor2_IN2,HIGH); 
         //motor SW
         digitalWrite(motor3_IN1,HIGH);
         digitalWrite(motor3_IN2,LOW);
         //motor SE
-        digitalWrite(motor4_IN3,HIGH);
-        digitalWrite(motor4_IN4,LOW);
+        digitalWrite(motor4_IN1,HIGH);
+        digitalWrite(motor4_IN2,LOW);
         }
       case'S'{
         Serial.println("Reverse");
@@ -95,14 +95,14 @@ void execution(){
         digitalWrite(motor1_IN1,HIGH);
         digitalWrite(motor1_IN2,LOW);
         //motor NE
-        digitalWrite(motor2_IN3,LOW);
-        digitalWrite(motor2_IN4,HIGH); 
+        digitalWrite(motor2_IN1,LOW);
+        digitalWrite(motor2_IN2,HIGH); 
         //motor SW
         digitalWrite(motor3_IN1,HIGH);
         digitalWrite(motor3_IN2,LOW);
         //motor SE
-        digitalWrite(motor4_IN3,LOW);
-        digitalWrite(motor4_IN4,HIGH);
+        digitalWrite(motor4_IN1,LOW);
+        digitalWrite(motor4_IN2,HIGH);
         }
         delay(10000);//10seconds
       }
